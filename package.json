@@ -73,7 +73,7 @@
     "yup": "^0.32.9"
   },
   "scripts": {
-    "heroku-prebuild": "echo CARLOOOOS",
+    "heroku-prebuild": "npm config set legacy-peer-deps true",
     "heroku-postbuild": "echo This runs after Heroku installs dependencies, but before Heroku prunes and caches dependencies.",
     "heroku-cleanup": "echo This runs after Heroku prunes and caches dependencies.",
     "lint": "eslint . --ext ts --ext tsx --ext js --fix",
