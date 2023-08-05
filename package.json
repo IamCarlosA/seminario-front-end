@@ -73,6 +73,7 @@
     "yup": "^0.32.9"
   },
   "scripts": {
+    "heroku-prebuild": "npm config set legacy-peer-deps true && npm config set @ecommerce-ozon:registry https://gitlab.com/api/v4/projects/35700014/packages/npm/ && npm config set -- '//gitlab.com/api/v4/projects/35700014/packages/npm/:_authToken' 'glpat-q5QyL4GChAH8Wx4sdA3i'",
     "lint": "eslint . --ext ts --ext tsx --ext js --fix",
     "format": "npx prettier --write .",
     "start": "serve -s build",
