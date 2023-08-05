@@ -1,0 +1,43 @@
+@use "~@ecommerce-ozon/design_system/dist/public/styles/_variables.scss" as *;
+
+.medium-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 151.25px;
+  height: 56px;
+  justify-content: center;
+  filter: grayscale(100%);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  background-color: var(--neutral_200);
+
+  & svg {
+    max-width: 8rem;
+    height: auto;
+    fill: var(--neutral_500);
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: inherit;
+    background-color: white;
+
+    & svg {
+      fill: inherit;
+    }
+  }
+
+  @media (max-width: $dso_bp_desktop) {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: inherit;
+    background-color: white;
+    flex-shrink: 0;
+
+    & svg {
+      fill: inherit;
+    }
+  }
+}

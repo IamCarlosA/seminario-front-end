@@ -1,0 +1,43 @@
+.root {
+  background-color: var(--neutral_0);
+  display: grid;
+  // height: 100vh;
+  //overflow-y: scroll;   //todo: revisar esto
+  grid-template-areas:
+    "head"
+    "main";
+  grid-template-rows: auto 1fr;
+  .main {
+    width: 100vw;
+    //margin-top: 4.5rem;
+    // overflow-x: hidden;  //todo: revisar esto
+    position: relative;
+  }
+
+  .bordeNav {
+    margin-bottom: 4.3rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    .bordeNav {
+      margin-bottom: 5.5rem;
+    }
+  }
+
+  .layout-container {
+    background-image: url("../../static/images/ilustrations/pattern.svg");
+    background-repeat: no-repeat;
+
+    margin: 0 auto;
+  }
+}
+.fab-wa {
+  background-color: var(--green_300);
+  fill: white;
+  bottom: var(--xl);
+  left: var(--xl);
+  z-index: 50;
+  border-radius: 50%;
+  position: fixed;
+  display: flex;
+}

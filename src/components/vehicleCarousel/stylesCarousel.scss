@@ -1,0 +1,134 @@
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  //height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  width: 100%;
+  //background-color: blue;
+}
+
+.mySwiper {
+  box-sizing: border-box;
+  padding: 10px 10px;
+  max-height: 80px;
+  //background-color: red;
+
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  opacity: 0.9;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.overlay-container {
+  position: relative;
+  text-align: center;
+  opacity: 0.8;
+
+}
+
+.overlay-text-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: darkorange;
+}
+
+
+.thumbnail-slide-image{
+  height: 100%;
+  min-height: 80px;
+}
+
+
+.swiper-button-prev{
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+  z-index: 30;
+}
+
+.swiper-button-next {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+  z-index: 30;
+}
+.swiper-button-prev::after {
+  content: url("../../static/icons/left-arrow.svg");
+}
+.swiper-button-next::after {
+  content: url("../../static/icons/right-arrow.svg");
+}
+
+.swiper-pagination {
+  background-color: rgba(0,0,0,0.5); /* Change background color to black */
+  padding: 10px 0;
+  width: 10px;
+  border-radius: 50px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+//.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+//
+//  width: 100px;
+//}
+
+@media only screen and (min-width: 600px) {
+  .swiper-pagination {
+    display: none!important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .swiper-button-prev{
+    display: none!important;
+  }
+
+  .swiper-button-next {
+    display: none!important;
+  }
+}
+
+

@@ -1,0 +1,14 @@
+.lettersNumers {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 70px;
+}
+
+@media screen and (max-width: 600px) {
+  .lettersNumers {
+    text-align: center;
+    font-size: 54.1747px;
+    line-height: 50px;
+  }
+}

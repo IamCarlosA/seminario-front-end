@@ -1,0 +1,9 @@
+.vehicle-card-item-container {
+  overflow: hidden;
+  animation: 1s slideUp;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 199px;
+  }
+}

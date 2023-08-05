@@ -1,0 +1,15 @@
+.styled-filter-item-container {
+
+  color: var(--primary_300);
+  fill: var(--primary_300);
+  border: 1px solid var(--primary_300);
+  background-color: var(--neutral_0);
+  border-radius: 5px;
+
+  &.active {
+    background-color: var(--primary_300);
+    color: var(--neutral_0);
+    fill: var(--neutral_0);
+  }
+
+}

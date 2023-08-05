@@ -1,0 +1,10 @@
+@use "~@ecommerce-ozon/design_system/dist/public/styles/_variables.scss" as *;
+
+.discount-section-container {
+  & .hotsale-container {
+    margin-left: 54px;
+    @media (max-width: $dso_bp_desktop) {
+      margin-left: 0;
+    }
+  }
+}

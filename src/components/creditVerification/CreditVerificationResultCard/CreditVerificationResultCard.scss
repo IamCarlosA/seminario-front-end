@@ -1,0 +1,26 @@
+.credit-verification-result-card {
+  max-width: 662px;
+  width: 100%;
+  box-shadow: 2px 4px 8px rgba(34, 38, 42, 0.05), 4px 8px 24px rgba(34, 38, 42, 0.1);
+  border-radius: 15px;
+
+  &.success {
+    background-color: rgba(92, 229, 41, 0.71);
+  }
+
+  &.fail {
+    background-color: #DF2040;
+  }
+
+  & .logo {
+    width: 122px;
+    height: 78px;
+  }
+
+  & .icon-success {
+    position: relative;
+    left: -24px;
+    bottom: -22px;
+  }
+
+}

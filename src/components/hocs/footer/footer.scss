@@ -1,0 +1,16 @@
+
+.fcards {
+  border-left: 1px solid #424242;
+  border-right: 1px solid #424242;
+}
+
+
+@media screen and (max-width: 600px) {
+  .fcards {
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    border-top: 1px solid #424242;
+    border-bottom: 1px solid #424242;
+  }
+}

@@ -1,0 +1,14 @@
+.bcards {
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+}
+
+@media screen and (max-width: 600px) {
+  .bcards {
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+  }
+}

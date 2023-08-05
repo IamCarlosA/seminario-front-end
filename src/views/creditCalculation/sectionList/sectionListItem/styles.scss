@@ -1,0 +1,52 @@
+@use "~@ecommerce-ozon/design_system/dist/public/styles/_variables.scss" as *;
+
+.section-list-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $neutral_700;
+
+  & .text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $dso_bp_desktop) {
+      flex-direction: column;
+    }
+  }
+
+  & .label-container.completed {
+    color: $primary_300;
+  }
+
+  & .number-container.completed {
+    color: $neutral_0;
+    background-color: $primary_300;
+    border: 2px solid $primary_300;
+  }
+
+  & .label-container {
+    text-align: center;
+  }
+
+  & .number-container {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $neutral_700;
+  }
+  & .separator {
+    margin-top: 3px;
+    @media (max-width: $dso_bp_desktop) {
+      display: none;
+    }
+  }
+
+  & .separator.completed {
+    color: $primary_300;
+  }
+}

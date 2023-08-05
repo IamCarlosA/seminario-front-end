@@ -1,0 +1,20 @@
+@use "~@ecommerce-ozon/design_system/dist/public/styles/_variables.scss" as *;
+
+.city-modal-option {
+  max-width: 315px;
+  height: 210px;
+  position: relative;
+  width: 100%;
+
+  &:hover{
+    cursor: pointer;
+    background-color: $primary_300;
+    color: white;
+  }
+
+  img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}

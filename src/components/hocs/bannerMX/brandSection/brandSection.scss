@@ -1,0 +1,26 @@
+.brandSection {
+  overflow-x: scroll;
+}
+.brandSection::-webkit-scrollbar {
+  display: none;
+ }
+@media screen and (min-width: 1900px) {
+  .brandSection {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .brandSection {
+    overflow: scroll;
+    display: flex;
+  }
+
+  .brandSection div{
+    animation: slide 20s linear infinite;
+  }
+ 
+}
+

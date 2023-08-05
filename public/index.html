@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Ozon" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="OZON  – Compra y Venta de Motos" />
+    <meta property="og:url" content="www.ozon.mobi" />
+    <meta property="og:title" content="OZON - Compra y Venta de Motos" />
+    <meta
+      property="og:description"
+      content="En Ozon, te financiamos la moto de tus sueños o compramos tu moto al instante."
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/antoniovillegas/image/upload/v1677289211/seoOzon_b0cxbs.png"
+    />
+    <script
+      type="text/javascript"
+      src="https://pay.conekta.com/v1.0/js/conekta-checkout.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.conekta.io/js/latest/conekta.js"
+    ></script>
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=%REACT_APP_GA%"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '%REACT_APP_GA%');
+    </script>
+-->
+
+    <!-- Google Tag Manager -->
+    <!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NH2KQTW');</script>-->
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PBFNQMD");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Material UI -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!-- Hotjar script -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+        h._hjSettings = { hjid:% REACT_APP_HOTJAR_ID %, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script'); r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- /Hotjar script -->
+    <!-- Maze script -->
+    <script>
+      (function (m, a, z, e) {
+        var s, t;
+        try {
+          t = m.sessionStorage.getItem("maze-us");
+        } catch (err) {}
+
+        if (!t) {
+          t = new Date().getTime();
+          try {
+            m.sessionStorage.setItem("maze-us", t);
+          } catch (err) {}
+        }
+
+        s = a.createElement("script");
+        s.src = z + "?t=" + t + "&apiKey=" + e;
+        s.async = true;
+        a.getElementsByTagName("head")[0].appendChild(s);
+        m.mazeUniversalSnippetApiKey = e;
+      })(
+        window,
+        document,
+        "https://snippet.maze.co/maze-universal-loader.js",
+        "9c2957ea-f585-41fd-abc5-ceea4dd6ac03"
+      );
+    </script>
+    <!-- /Maze script -->
+    <title>Ozon</title>
+  </head>
+
+  <body>
+    <!--CHATFUEL-->
+    <script>
+      // Crear el div
+      var chatDiv = document.createElement("div");
+      chatDiv.style.position = "fixed";
+      chatDiv.style.right = "200px";
+      chatDiv.style.bottom = "70px";
+      chatDiv.style.zIndex = "9999";
+      document.body.appendChild(chatDiv);
+      var scriptId = "64a60afc441f7f786846b253";
+      var src = "https://dashboard.chatfuel.com/integration/entry-point.js";
+      var script = document.createElement("script");
+      script.src = src;
+      script.id = scriptId;
+      script.async = true;
+      script.defer = true;
+      chatDiv.appendChild(script);
+    </script>
+    <!-- Google Tag Manager (noscript) -->
+    <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH2KQTW"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PBFNQMD"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div id="modal-root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

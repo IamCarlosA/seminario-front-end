@@ -1,0 +1,46 @@
+.credit-verification-success {
+  & .vehicle-image-container {
+    width: 100%;
+    max-width: 661px;
+
+    & img {
+      width: 100%;
+      max-width: 460px;
+    }
+  }
+}
+
+.textApproved {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.separador {
+  border-right: 1px solid #DEDEDE;
+}
+
+.docsContainer {
+  display: flex;
+}
+
+.docsItem {
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .textApproved {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .separador {
+    border-right: 0px;
+  }
+  .docsContainer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .docsItem {
+    width: calc((100%) / 2);
+  }
+}

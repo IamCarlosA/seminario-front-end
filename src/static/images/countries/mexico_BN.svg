@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F0F0F0;}
+	.st1{fill:#454545;}
+	.st2{fill:#8A8A8A;}
+	.st3{fill:#A8A8A8;}
+</style>
+<circle class="st0" cx="256" cy="256" r="256"/>
+<path class="st1" d="M512,256c0-101.5-59.1-189.2-144.7-230.6v461.2C452.9,445.2,512,357.5,512,256z"/>
+<g>
+	<path class="st2" d="M0,256c0,101.5,59.1,189.2,144.7,230.6V25.4C59.1,66.8,0,154.5,0,256z"/>
+	<path class="st2" d="M189.2,256c0,36.9,29.9,66.8,66.8,66.8s66.8-29.9,66.8-66.8v-22.3H189.2V256z"/>
+</g>
+<path class="st3" d="M345,211.5h-66.8c0-12.3-10-22.3-22.3-22.3s-22.3,10-22.3,22.3H167c0,12.3,10.7,22.3,23,22.3h-0.7
+	c0,12.3,10,22.3,22.3,22.3c0,12.3,10,22.3,22.3,22.3h44.5c12.3,0,22.3-10,22.3-22.3c12.3,0,22.3-10,22.3-22.3H322
+	C334.3,233.7,345,223.8,345,211.5z"/>
+</svg>

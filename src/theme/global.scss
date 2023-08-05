@@ -1,0 +1,169 @@
+@import "~@ecommerce-ozon/design_system/dist/public/styles/_rem";
+@import "~@ecommerce-ozon/design_system/dist/public/styles/_variables.scss";
+@import "~@ecommerce-ozon/design_system/dist/public/styles/_design-system.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+  &::-webkit-scrollbar {
+    height: 0.3rem;
+    width: 0.3rem;
+    background-color: var(--neutral_300);
+    border-radius: var(--xs);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--primary_300);
+    border-radius: var(--xs);
+  }
+  &::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+  }
+}
+body {
+  margin: 0;
+  background-color: var(--neutral_100);
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 2px;
+  height: 2px;
+}
+
+.MuiStepLabel-label {
+  font-size: 11px !important;
+}
+.MuiStepIcon-text {
+  font-size: 16px !important;
+  font-weight: 600;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.text-bolder{
+  font-weight: 900 !important;
+}
+
+.MuiSelect-standard:hover{
+  border: 1px solid darkorange !important;
+}
+
+.MuiSelect-standard{
+  border: 1px solid lightgrey !important;
+  background-color: white !important;
+  height: 22px !important;
+  border-radius: 5px !important;
+  padding-left: 10px!important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  text-overflow-ellipsis: ellipsis;
+}
+
+.MuiAccordion-root{
+   box-shadow: none!important;
+}
+
+.MuiButtonBase-root{
+  //width: 100%;
+}
+
+
+.MuiAccordionSummary-content{
+  margin: 0!important;
+  min-width: 140px !important;
+}
+
+.MuiAccordionDetails-root{
+  background-color: #ECEEEF;
+}
+
+.Mui-selected{
+  background-color: rgba(242,142,24, 0.95) !important;
+  color:white !important;
+}
+
+.MuiAccordionSummary-expandIconWrapper{
+  margin-right: 3px;
+}
+
+.Mui-expanded{
+  min-height: auto;
+}
+
+.modalcontainer{
+  z-index: 1000!important;
+}
+
+.MuiSelect-select	{
+  padding: 0;
+}
+.bg-white{
+  background-color: white;
+}
+
+
+.slick-thumb {
+  bottom: -45px;
+}
+.slick-dots {
+  margin-left: 0;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block !important;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-thumb li.slick-active img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.slick-thumb li img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+
+.img-vehicle-thumbnail {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 100%;
+}
+
+.MuiSelect-filled	{
+  background-color: red !important;
+}
+@media (max-width: 600px) {
+  .product__price-tag{
+    top:-15px;
+  }
+}
+.MuiPagination-ul li{
+  margin: 3px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+}
+
+input[type=number]{
+  font-size: 14px;
+}

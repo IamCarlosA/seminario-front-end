@@ -1,0 +1,30 @@
+.my-stepper {
+  position: relative;
+  .Mui-active,
+  .Mui-completed {
+    color: var(--primary_300) !important;
+  }
+}
+.ozoner {
+  .hora {
+    text-align: center;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 0.875rem;
+    background-color: var(--neutral_300);
+    color: var(--neutral_contrast_300);
+    &:hover {
+      background-color: var(--neutral_800);
+      color: white;
+    }
+    &.active,
+    &.active:hover {
+      background-color: var(--primary_300);
+      color: white;
+    }
+  }
+  .wa_icon {
+    position: absolute;
+    right: 100%;
+  }
+}

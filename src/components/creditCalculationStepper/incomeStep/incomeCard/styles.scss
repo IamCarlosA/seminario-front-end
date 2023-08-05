@@ -1,0 +1,18 @@
+.income-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 447px;
+  height: 144px;
+
+  & .options-container {
+    display: flex;
+  }
+}
+
+.txt-center {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}

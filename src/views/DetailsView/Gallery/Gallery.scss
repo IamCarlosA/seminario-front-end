@@ -1,0 +1,11 @@
+.photosVehicle {
+  height: 70%;
+  :hover {
+    height: 110%;
+    background-color: #0ac257;
+  }
+}
+
+.photoPrincipal {
+  transition: visibility 0.03s linear;
+}

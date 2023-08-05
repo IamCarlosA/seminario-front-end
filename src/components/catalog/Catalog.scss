@@ -1,0 +1,81 @@
+@use "~@ecommerce-ozon/design_system/dist/public/styles/_variables.scss" as *;
+
+@keyframes slideUp {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 1000px, 0) scaleY(2);
+  }
+  60% {
+
+    transform: translate3d(0, -20px, 0) scaleY(0.9);
+  }
+
+  75% {
+    transform: translate3d(0, 10px, 0) scaleY(0.95);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0) scaleY(0.985);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0) scaleY(1);
+    opacity: 1;
+  }
+}
+
+.catalog-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: auto 1fr;
+  @media (max-width: $dso_bp_desktop) {
+    grid-template-columns: auto;
+  }
+
+  & .sidebar {
+    box-shadow: 2px 4px 8px rgba(34, 38, 42, 0.05), 4px 8px 24px rgba(34, 38, 42, 0.1);
+    width: 97px;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+
+    &.expanded {
+      width: 335px;
+    }
+  }
+
+  & .divider {
+    background-color: var(--neutral_400);
+    width: 100%;
+    height: 2px;
+  }
+
+  & .main {
+
+  }
+
+  & .order-panel {
+
+  }
+
+  & .filters-panel {
+
+  }
+
+  & .vehicle-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 320px));
+    justify-content: center;
+    @media (max-width: $dso_bp_desktop) {
+      justify-content: center;
+    }
+    grid-gap: 10px;
+  }
+}

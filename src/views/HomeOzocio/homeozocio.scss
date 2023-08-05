@@ -1,0 +1,14 @@
+.homeozocio {
+  .cover {
+    margin-top: calc(-1 * var(--xxxl));
+    width: 100vw;
+    .cover-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 var(--xl);
+    }
+  }
+  .number {
+    height: 7.5rem;
+  }
+}

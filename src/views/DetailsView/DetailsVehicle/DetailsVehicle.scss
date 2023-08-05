@@ -1,0 +1,7 @@
+.borderSeparate {
+  border-right: 1px solid #EAEAEA;
+  @media (max-width: 600px) {
+    border-right: 0;
+    border-bottom: 1px solid #EAEAEA;
+  }
+}

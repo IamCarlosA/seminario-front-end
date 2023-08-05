@@ -1,0 +1,22 @@
+.credit-digital-platforms {
+  & .logo-container {
+    & img {
+      max-width: 689px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  & .subtitle {
+    max-width: 688px;
+  }
+
+  & .inputs-container {
+    max-width: 304px;
+  }
+
+  & .submit {
+    max-width: 690px;
+    width: 100%;
+  }
+}

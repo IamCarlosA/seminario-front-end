@@ -1,0 +1,13 @@
+.detailsMain {
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+.containerDetailsdata {
+  max-height: 650px ;
+  @media (max-width: 600px) {
+    max-height: 100% ;
+  }
+}
+
+

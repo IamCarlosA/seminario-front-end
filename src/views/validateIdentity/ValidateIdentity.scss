@@ -1,0 +1,18 @@
+.validate-identity-container {
+  width: 100%;
+  max-width: 688px;
+  justify-self: center;
+}
+
+.identity_loading{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: var(--neutral_900_rgb), $alpha: 0.7);
+  img{
+    height: var(--xl);
+  }
+}

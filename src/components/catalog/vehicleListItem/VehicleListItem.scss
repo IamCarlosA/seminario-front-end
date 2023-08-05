@@ -1,0 +1,14 @@
+.vehicle-list-item-container {
+  background: #FFFFFF;
+  border-radius: 7.72px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  overflow: hidden;
+  animation: 1s slideUp;
+
+  img {
+    width: 300px;
+    object-fit: cover;
+    height: 214px;
+  }
+}

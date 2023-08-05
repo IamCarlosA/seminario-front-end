@@ -1,0 +1,30 @@
+@use "~@ecommerce-ozon/design_system/dist/public/styles/_variables.scss" as *;
+
+.credit-calculation-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .vehicle-cards-container {
+    width: 100%;
+    display: grid;
+    grid-gap: 32px;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+  }
+
+  & .credit-calculation-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  & .card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

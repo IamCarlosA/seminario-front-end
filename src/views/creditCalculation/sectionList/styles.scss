@@ -1,0 +1,8 @@
+@use "~@ecommerce-ozon/design_system/dist/public/styles/_variables.scss" as *;
+
+.section-list-container {
+  display: flex;
+  @media (max-width: $dso_bp_desktop) {
+    justify-content: space-around;
+  }
+}

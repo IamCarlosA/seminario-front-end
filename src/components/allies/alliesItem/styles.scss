@@ -1,0 +1,21 @@
+.allies-item-container {
+  display: flex;
+  min-width: 232px;
+  height: 87px;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    width: 59.87px;
+    height: 59.87px;
+  }
+
+  &.has-link:hover {
+    cursor: pointer;
+  }
+
+  &.full-logo svg {
+    width: 170px;
+    object-fit: cover;
+  }
+}

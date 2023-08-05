@@ -1,0 +1,36 @@
+@use "~@ecommerce-ozon/design_system/dist/public/styles/_variables.scss" as *;
+.pre-catalog-section-container {
+  display: grid;
+  grid-template-columns: minmax(20%,1fr) minmax(80%,4fr);
+  grid-template-areas: "labels carousel"
+                        "control carousel";
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-areas: "labels"
+                          "carousel"
+                          "control";
+  }
+
+
+  .carousel-item-container {
+    display: grid;
+  }
+}
+.slider-control{
+  .slider-point {
+    display: inline-flex;
+    height: 0.625rem;
+    width: 0.625rem;
+    background-color: $neutral_500;
+    border-radius: 0.3125rem;
+    margin-right: var(--md);
+    transition: 0.5s;
+  }
+  .slider-point.active {
+    width: 1.9375rem;
+    background-color: #fe8a02;
+  }
+}

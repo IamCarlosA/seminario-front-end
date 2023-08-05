@@ -1,0 +1,14 @@
+.media-section-container {
+  display: flex;
+  flex-direction: column;
+
+  & .list-container {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  & .title-container {
+    display: flex;
+    justify-content: center;
+  }
+}

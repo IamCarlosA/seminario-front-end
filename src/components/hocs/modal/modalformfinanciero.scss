@@ -1,0 +1,47 @@
+@use "~@ecommerce-ozon/design_system/dist/public/styles/_variables.scss" as *;
+.modalF {
+  padding: 0px !important;
+  min-width: 1000px;
+  min-height: 400px;
+  @media (max-width: $dso_bp_desktop) {
+    min-width: 85%;
+    min-height: 400px;
+  }
+}
+
+.formF {
+  max-height: 622px;
+  overflow: scroll;
+  @media (max-width: $dso_bp_desktop) {
+    max-height: 400px;
+    overflow: unset;
+  }
+}
+
+.modalF::-webkit-scrollbar {
+  display: none;
+}
+
+.modalAM {
+  min-width: 600px;
+  @media (max-width: $dso_bp_desktop) {
+    min-width: 85%;
+  }
+}
+
+.modalAM::-webkit-scrollbar {
+  display: none;
+}
+
+.modalInf {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./img-modal.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 400px;
+  @media (max-width: $dso_bp_desktop) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    min-height: 100px;
+  }
+}

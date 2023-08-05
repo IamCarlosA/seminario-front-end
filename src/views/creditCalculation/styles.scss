@@ -1,0 +1,50 @@
+@use "~@ecommerce-ozon/design_system/dist/public/styles/_variables.scss" as *;
+
+.credit-calculation {
+  display: grid;
+  grid-template-columns: minmax(300px, 900px) minmax(300px, 900px);
+
+  @media (max-width: $dso_bp_desktop) {
+    grid-template-columns: 100%;
+  }
+
+  grid-template-rows: 1fr;
+  place-content: center;
+  min-height: 700px;
+
+  & .card-container {
+    max-width: 668px;
+    width: 100%;
+    background: #f7f7f7;
+  }
+
+  & .right-side-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  & .left-side-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  & .left-side-image {
+    max-width: 663px;
+    max-height: 663px;
+    width: 100%;
+    height: 100%;
+  }
+
+  & .sections-container {
+  }
+}
+
+.custom-input-color{
+  fill:rgb(251,118,9);
+}

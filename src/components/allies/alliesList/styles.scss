@@ -1,0 +1,11 @@
+@use "~@ecommerce-ozon/design_system/dist/public/styles/_variables.scss" as *;
+
+.allies-list-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  justify-content: center;
+  @media (max-width: $dso_bp_desktop) {
+    justify-content: flex-start;
+  }
+}

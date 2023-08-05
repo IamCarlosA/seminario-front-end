@@ -1,0 +1,70 @@
+.discount-carousel-container {
+  user-select: none;
+
+  img {
+    -drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+  & .vehicles {
+  }
+
+  & .page-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  & .vehicle-grid {
+    width: 100%;
+  }
+
+  & .arrow {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+
+    &.left {
+      left: 20px;
+
+      & .up {
+        transform: rotate(45deg);
+      }
+
+      & .down {
+        transform: rotate(-45deg);
+        top: 15px;
+      }
+    }
+
+    &.right {
+      right: 30px;
+
+      & .up {
+        transform: rotate(-45deg);
+      }
+
+      & .down {
+        transform: rotate(45deg);
+        top: 15px;
+      }
+    }
+
+    & .box {
+      width: 10px;
+      height: 30px;
+      position: absolute;
+
+      &:hover {
+        cursor: pointer;
+      }
+      &.outline {
+        border: 2px solid;
+      }
+    }
+  }
+}

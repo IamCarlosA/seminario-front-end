@@ -1,0 +1,13 @@
+.activityStep-container {
+  display: flex;
+  flex-direction: column;
+  width: 328px;
+
+  input,
+  select {
+    width: 100%;
+  }
+  .dso_input_select_cont {
+    width: 100% !important;
+  }
+}

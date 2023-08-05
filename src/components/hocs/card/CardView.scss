@@ -1,0 +1,55 @@
+.vehicle-card.card {
+  cursor: pointer;
+  position: relative;
+  box-shadow: 2px 4px 8px rgba(34, 38, 42, 0.05),
+    4px 8px 24px rgba(34, 38, 42, 0.1);
+  padding-top: calc(10% + 2rem);
+  .chip {
+    max-width: 45%;
+    transform: translateX(-50%);
+    padding: 0.75rem 0.5rem;
+    position: absolute;
+    top: 4%;
+    background-color: #454d54;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    left: 25%;
+    height: 2rem;
+
+    &.right {
+      left: 75%;
+    }
+    &.primary {
+      background-color: #ffad4f;
+    }
+    &.danger {
+      background-color: #df2040;
+    }
+    img {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+  .card-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    image-rendering: crisp-edges;
+    height: 8rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  .vehicle-grid .card {
+    padding-top: calc(12% + 4rem);
+    .chip {
+      transform: none;
+      max-width: 95%;
+      left: 5%;
+      &.right {
+        left: 5%;
+        top: calc(8% + 2rem);
+      }
+    }
+  }
+}

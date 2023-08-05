@@ -1,0 +1,43 @@
+@use "~@ecommerce-ozon/design_system/dist/public/styles/_variables.scss" as *;
+
+.vehicles-filters-container {
+  position: static;
+  top: calc(72px + 32px);
+  z-index: 10;
+  transition: transform 0.3s ease;
+
+  &.sticky {
+    position: fixed;
+    left: 0;
+    top: 72px;
+    @media (max-width: $dso_bp_desktop) {
+      top: 55px;
+    }
+    right: 0;
+    max-width: 100%;
+  }
+
+  &.hide {
+    transform: translate(0, -200px);
+  }
+
+  &.show {
+    transform: translate(0, 0);
+  }
+
+  & .search-container {
+    display: flex;
+    align-items: stretch;
+  }
+
+  & .search-button {
+    height: 40px;
+    margin-top: 16px !important;
+  }
+
+  & .buttons-container-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
